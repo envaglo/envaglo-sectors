@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Envaglo System</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --bgColor: #ebecf7;
+  --whiteColor: #fff;
+  --mainColor: #5f009f;
+  --secondColor: #5f009f;
+  --sectorsColor: #c686f4;
+}
+body {
+  width: 97%;
+  max-width: 1450px;
+  margin: auto;
+  background-color: var(--bgColor);
+}
+/* Start Header Section */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 10px;
+}
+
+header .header_right {
+  width: 25%;
+  color: var(--mainColor);
+}
+header .header_right h1 {
+  font-size: 1.25rem;
+}
+header .header_right p {
+  font-size: 0.875rem;
+}
+header .header_left {
+  width: 75%;
+  background-color: var(--whiteColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+header .header_left .laguage_and_alert {
+  width: 50%;
+  background-color: var(--bgColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+header .header_left .laguage_and_alert .laguage {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 86px;
+  padding-left: 10px;
+  border-radius: 30px;
+  position: relative;
+}
+header .header_left .laguage_and_alert .laguage img {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2px;
+  position: absolute;
+  right: -7px;
+  top: 1px;
+  bottom: 0;
+}
+header .header_left .laguage_and_alert .laguage p {
+  font-size: 17px;
+}
+header .header_left .laguage_and_alert .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+header .header_left .laguage_and_alert .alert img {
+  width: 30px;
+  height: 30px;
+}
+header .header_left .laguage_and_alert .alert .alerts_number {
+  background-color: var(--whiteColor);
+  position: absolute;
+  top: 10px;
+  bottom: -4px;
+  right: -10px;
+  left: 14px;
+  padding: 0px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+header .header_left .envaglo_logo .img_container {
+  width: 220px;
+  height: 100%;
+}
+header .header_left .envaglo_logo .img_container img {
+  width: 100%;
+  height: 100%;
+}
+/* End Header Section */
+/* Start Main Section */
+.main_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+.main_section .main_section_right {
+  width: 25%;
+}
+.main_section .main_section_right .ads_section {
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.main_section .main_section_right .ads_section p {
+  font-size: 6rem;
+  line-height: 5rem;
+  opacity: 0.2;
+}
+.main_section .main_section_right .ads_section p:last-child {
+  font-size: 5rem;
+}
+.main_section .main_section_right .contact .envaglo_logo {
+  background-color: var(--whiteColor);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px 39px;
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.main_section .main_section_right .contact .envaglo_logo img {
+  width: 100%;
+  height: 100%;
+}
+.main_section .main_section_right .contact .wbsite_link {
+  text-align: center;
+}
+.main_section .main_section_right .contact .wbsite_link p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.main_section .main_section_right .contact .wbsite_link a {
+  text-decoration: none;
+  color: unset;
+}
+.main_section .main_section_right .contact .wbsite_link a p {
+  font-weight: 600;
+}
+.main_section .main_section_left {
+  width: 75%;
+}
+.main_section .main_section_left .sector {
+  margin-bottom: 30px;
+}
+.main_section .main_section_left .sector h3 {
+  font-size: 1rem;
+  color: var(--sectorsColor);
+}
+.main_section .main_section_left .sector .modules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main_section .main_section_left .sector .modules .single_module {
+  background-color: var(--whiteColor);
+  padding: 10px 0px;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  cursor: pointer;
+  position: relative;
+  width:145px;
+}
+.main_section
+  .main_section_left
+  .sector
+  .modules
+  .single_module
+  .img_container {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.main_section
+  .main_section_left
+  .sector
+  .modules
+  .single_module
+  .img_container
+  img {
+  width: 100%;
+  height: 100%;
+}
+.main_section .main_section_left .sector .modules .single_module p {
+  font-weight: 600;
+  color: var(--secondColor);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.main_section
+  .main_section_left
+  .sector
+  .modules
+  .single_module:hover
+  .img_container {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.main_section .main_section_left .sector .modules .single_module:hover p {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+/* End Main Section */
+/* Start Media Query */
+@media screen and (max-width: 1500px) {
+  body {
+    width: 90%;
+  }
+  .main_section .main_section_left .sector .modules {
+    gap: 14px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .header_right,
+  .main_section .main_section_right {
+    width: 30%;
+  }
+  header .header_left,
+  .main_section .main_section_left {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .header_left .envaglo_logo .img_container {
+    width: 150px;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 7px;
+  }
+  header .header_right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .main_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 7px;
+    margin-top: 10px;
+  }
+  .main_section .main_section_right {
+    width: 100%;
+  }
+  .main_section .main_section_right .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .main_section .main_section_right .ads_section {
+    height: 50vh;
+  }
+  .main_section .main_section_right .contact .envaglo_logo {
+    width: 200px;
+    margin: 15px 0px;
+    padding: 8px 10px;
+    padding-top: 17px;
+  }
+  header .header_left,
+  .main_section .main_section_left {
+    width: 100%;
+  }
+  .main_section .main_section_left .sector .modules .single_module p {
+    font-weight: 400;
+  }
+  .main_section .main_section_right .contact .wbsite_link {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 520px) {
+  header .header_left .laguage_and_alert {
+    width: 70%;
+  }
+  header .header_left .envaglo_logo .img_container {
+    width: 115px;
+  }
+  .main_section .main_section_left .sector .modules {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .main_section .main_section_left .sector .modules .single_module {
+    /* width: calc(100% / 4); */
+   /* min-width: 140px;*/
+    padding-top: 28px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .header_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  header .header_right h1 {
+    width: 100%;
+  }
+  header .header_left {
+    padding: 5px 7px;
+  }
+  header .header_left .envaglo_logo .img_container {
+    width: 80px;
+  }
+  /* .main_section .main_section_left .sector .modules .single_module {
+    min-width: 128px;
+  } */
+  .main_section .main_section_left .sector .modules .single_module p {
+    font-size: 13px;
+  }
+  .main_section .main_section_right .contact .wbsite_link p {
+    font-size: 1rem;
+  }
+}
+/* End Media Query */
+    </style>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header>
+      <div class="header_right">
+        <h1>مرحباً فولان فولان</h1>
+        <p>شركة إنفاجلو لتقنية المعلومات</p>
+      </div>
+      <div class="header_left">
+        <div class="laguage_and_alert">
+          <div class="laguage">
+            <img src="./assets/earth.svg" width="20px" height="20px" alt="" />
+            <p>العربية</p>
+          </div>
+          <div class="alert">
+            <img src="./assets/alert.svg" alt="" />
+            <div class="alerts_number">
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <div class="envaglo_logo">
+          <div class="img_container">
+            <img src="./assets/envaglo-logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- Start Main Section -->
+    <section class="main_section">
+      <div class="main_section_right">
+        <div class="ads_section">
+          <p>ADS</p>
+          <p>section</p>
+        </div>
+        <div class="contact">
+            <div class="envaglo_logo">
+                <img src="./assets/contact-envaglo.svg" alt="">
+            </div>
+            <div class="wbsite_link">
+                <p>Visite our website for more services</p>
+                <a href="#">
+                    <p>envaglo.com</p>
+                </a>
+            </div>
+          </div>
+      </div>
+      <div class="main_section_left">
+        <div class="sector">
+            <h3>القطاع التجاري</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/1-commercial/1.svg" alt="">
+                    </div>
+                    <p>نقاط البيع</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/1-commercial/2.svg" alt="">
+                    </div>
+                    <p>التجار والموزعين</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/1-commercial/3.svg" alt="">
+                    </div>
+                    <p>المستودع المتقدم</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/1-commercial/4.svg" alt="">
+                    </div>
+                    <p>التوريدات والمشتريات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/1-commercial/5.svg" alt="">
+                    </div>
+                    <p>خطوط الإنتاج</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>القطاع الطبي</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/2-medical/1.svg" alt="">
+                    </div>
+                    <p>المؤسسات الطبية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/2-medical/2.svg" alt="">
+                    </div>
+                    <p>معامل التحاليل</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/2-medical/3.svg" alt="">
+                    </div>
+                    <p>الرعاية الصحية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/2-medical/4.svg" alt="">
+                    </div>
+                    <p>الصيدليات</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>قطاع الخدمات</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/3-services/1.svg" alt="">
+                    </div>
+                    <p>المطاعم والكافيهات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/3-services/2.svg" alt="">
+                    </div>
+                    <p>المطبخ</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/3-services/3.svg" alt="">
+                    </div>
+                    <p>مساحات العمل</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/3-services/4.svg" alt="">
+                    </div>
+                    <p>الصالات الرياضية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/3-services/5.svg" alt="">
+                    </div>
+                    <p>إدارات الإيجارات</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>قطاع التعليم</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/4-education/1.svg" alt="">
+                    </div>
+                    <p>الأكاديميات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/4-education/2.svg" alt="">
+                    </div>
+                    <p>المدارس والجامعات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/4-education/3.svg" alt="">
+                    </div>
+                    <p>الإدارات التعليمية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/4-education/4.svg" alt="">
+                    </div>
+                    <p>إداة الإمتحانات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/4-education/5.svg" alt="">
+                    </div>
+                    <p>شهادات ونتائج</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>الموارد البشرية</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/1.svg" alt="">
+                    </div>
+                    <p>الموارد البشرية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/2.svg" alt="">
+                    </div>
+                    <p>علاقات العملاء</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/3.svg" alt="">
+                    </div>
+                    <p>الموردين والأرصدة</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/4.svg" alt="">
+                    </div>
+                    <p>التجار والموزعين</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/5.svg" alt="">
+                    </div>
+                    <p>صلاحيات المستخدم</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/5-human-resource/6.svg" alt="">
+                    </div>
+                    <p>تتبع الوظائف</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>اللوجستيات</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/1.svg" alt="">
+                    </div>
+                    <p>الشحن والتتبع</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/2.svg" alt="">
+                    </div>
+                    <p>المعارض والفعاليات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/3.svg" alt="">
+                    </div>
+                    <p>إدارة المشروعات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/4.svg" alt="">
+                    </div>
+                    <p>إدارة المواعيد</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/5.svg" alt="">
+                    </div>
+                    <p>الأخبار والمقالات</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/6-logistic/6.svg" alt="">
+                    </div>
+                    <p>الوثائق والمستندات</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>وضع المؤسس</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/1.svg" alt="">
+                    </div>
+                    <p>إدارة الأعمال</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/2.svg" alt="">
+                    </div>
+                    <p>اللوائح والقوانين</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/3.svg" alt="">
+                    </div>
+                    <p>الموارد المؤسسية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/4.svg" alt="">
+                    </div>
+                    <p>الحسابات العامة</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/5.svg" alt="">
+                    </div>
+                    <p>إدارة المالية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/7-founder/6.svg" alt="">
+                    </div>
+                    <p>تهيئة النظام</p>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <h3>خدمات التطوير</h3>
+            <div class="modules">
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/1.svg" alt="">
+                    </div>
+                    <p>تطبيقات الويب</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/2.svg" alt="">
+                    </div>
+                    <p>تطبيقات الهاتف</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/3.svg" alt="">
+                    </div>
+                    <p>التجارة الإلكترونية</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/4.svg" alt="">
+                    </div>
+                    <p>الدعم الفني</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/5.svg" alt="">
+                    </div>
+                    <p>النسخ الإحتياطي</p>
+                </div>
+                <div class="single_module">
+                    <div class="img_container">
+                        <img src="./assets/sectors/8-development/6.svg" alt="">
+                    </div>
+                    <p>الأنظمة الخارجية</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ebd Main Section -->
+  </body>
+</html>
