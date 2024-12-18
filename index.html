@@ -98,6 +98,20 @@
       display: block;
     }
 
+  #backButton  {
+    
+    padding: 6px 30px;
+    background-color:#4C3585;
+    color: white;
+    border-radius: 4px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+
+  }
+
+
     @media (max-width: 1650px) {
       .grid-container {
         grid-template-columns: repeat(4, 1fr);
@@ -157,7 +171,7 @@
     </div>
   </div>
 
-  <div class="content" id="content">
+  <!-- <div class="content" id="content">
 
        <div class="grid-container">
 
@@ -180,23 +194,57 @@
           </div>
         </div>
         </div>
-  </div>
+  </div> -->
 
-  <script>
-    const gridItems = document.querySelectorAll('.grid-item');
+
+  <div class="content" id="content">
+    <button id="backButton" >رجوع</button>
+    <div class="grid-container">
+      <div class="grid-item2">
+        <div class="inner-grid-item">
+          <img class="sectorImage" src="./assets/test.svg" alt="">
+          <h2 class="titleSector">التجارة الإلكترونيه</h2>
+        </div>
+      </div>
+      <div class="grid-item2">
+        <div class="inner-grid-item">
+          <img class="sectorImage" src="./assets/test.svg" alt="">
+          <h2 class="titleSector">التجارة الإلكترونيه</h2>
+        </div>
+      </div>
+      <div class="grid-item2">
+        <div class="inner-grid-item">
+          <img class="sectorImage" src="./assets/test.svg" alt="">
+          <h2 class="titleSector">التجارة الإلكترونيه</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>const gridItems = document.querySelectorAll('.grid-item');
     const contentDiv = document.getElementById('content');
     const gridContainer = document.querySelector('.grid-container');
-  
+    const backButton = document.getElementById('backButton');
+    
+    // إخفاء الشبكة الرئيسية وعرض المحتوى
     gridItems.forEach(item => {
       item.addEventListener('click', () => {
         gridContainer.style.display = 'none'; 
         contentDiv.classList.add('active'); 
-  
-        const text = item.getAttribute('data-content');
-        history.pushState({ page: 'content', text }, '', '/index.html');
       });
     });
-  
+    
+    // التعامل مع زر "رجوع"
+    backButton.addEventListener('click', () => {
+      // إضافة الحالة إلى التاريخ
+      history.pushState({ page: 'content' }, '', '/index.html');
+    
+      // الرجوع إلى الشاشة السابقة
+      contentDiv.classList.remove('active');
+      gridContainer.style.display = 'grid';
+    });
+    
+    // التعامل مع التنقل باستخدام زر الرجوع الخاص بالمتصفح
     window.addEventListener('popstate', (event) => {
       if (event.state && event.state.page === 'content') {
         contentDiv.classList.add('active');
@@ -206,6 +254,7 @@
         gridContainer.style.display = 'grid';
       }
     });
+    
   </script>
   
 </body>
