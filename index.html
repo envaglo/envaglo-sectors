@@ -35,19 +35,10 @@
 
     .grid-item {
       padding: 2px;
-      margin-top: 40px;
-      margin: auto;
-    }
-    .grid-item2 {
-      padding: 2px;
-      margin-top: 40px;
-      margin: auto;
-    }
-
-    .inner-grid-item {
-      background-color: #4C3585;
-      width: 270px;
-      height: var(--grid-item-size);
+      margin:40px auto;
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: #4C3585;  
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -56,9 +47,29 @@
       border: 1px solid #ddd;
       border-radius: 20px;
       transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    .grid-item2 {
+      padding: 2px;
+      margin:40px auto;
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: #4C3585;  
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+
     }
 
-    .inner-grid-item:hover {
+ 
+
+    .grid-item:hover , .grid-item2:hover {
       background-color: #FE3E12;
     }
 
@@ -73,11 +84,11 @@
       transition: transform 0.3s ease;
     }
 
-    .inner-grid-item:hover .sectorImage {
+    .grid-item:hover .sectorImage ,  .grid-item2:hover .sectorImage  {
       transform: scale(var(--hover-scale)) translateY(var(--hover-transform-y));
     }
 
-    .inner-grid-item:hover .titleSector {
+    .grid-item:hover .titleSector , .grid-item2:hover .titleSector {
       transform: scale(0);
     }
 
@@ -112,25 +123,36 @@
   }
 
 
-    @media (max-width: 1650px) {
+
+
+    @media (max-width: 1400px) {
       .grid-container {
         grid-template-columns: repeat(4, 1fr);
       }
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 992px) {
       .grid-container {
         grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    @media (max-width: 920px) {
+    @media (max-width: 768px) {
       .grid-container {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-
-    @media (max-width: 600px) {
+    @media (max-width: 576px) {
+      .grid-container {
+        grid-template-columns: repeat(1, 0.6fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .grid-container {
+        grid-template-columns: repeat(1, 0.8fr);
+      }
+    }
+    @media (max-width: 350px) {
       .grid-container {
         grid-template-columns: repeat(1, 1fr);
       }
@@ -171,31 +193,7 @@
     </div>
   </div>
 
-  <!-- <div class="content" id="content">
-
-       <div class="grid-container">
-
-        <div class="grid-item2" >
-          <div class="inner-grid-item">
-            <img class="sectorImage" src="./assets/test.svg" alt="">
-            <h2 class="titleSector">التجارة الإلكترونيه</h2>
-          </div>
-        </div>
-        <div class="grid-item2" >
-          <div class="inner-grid-item">
-            <img class="sectorImage" src="./assets/test.svg" alt="">
-            <h2 class="titleSector">التجارة الإلكترونيه</h2>
-          </div>
-        </div>
-        <div class="grid-item2" >
-          <div class="inner-grid-item">
-            <img class="sectorImage" src="./assets/test.svg" alt="">
-            <h2 class="titleSector">التجارة الإلكترونيه</h2>
-          </div>
-        </div>
-        </div>
-  </div> -->
-
+  <img class="logo-image" src="./assets/logo.svg" alt="">
 
   <div class="content" id="content">
     <button id="backButton" >رجوع</button>
